@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 0px;
+    color: white;
+}
+
+h3 {
+    padding-top: 29px;
+}
+
+p {
+    margin-top: 15px;
+}
+
+textarea {
+    margin-bottom: 25px;
+}
+
+textarea, input {
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+.feedbackDiv {
+    border-radius: 5px;
+    background-color: blue;
+    padding-bottom: 25px;
+    width: 375px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 28em;
+    margin-top: 9em;
+}
+
+.thankYouText {
+    color: black;
+}
