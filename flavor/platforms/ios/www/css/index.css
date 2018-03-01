@@ -1,3 +1,5 @@
+/* APACHE CSS */
+
 /*
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -16,6 +18,7 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
@@ -112,4 +115,66 @@ h1 {
 .blink {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
+}
+
+/* MY CSS */
+
+h1, h3, h5 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 20px;
+}
+
+.hero {
+    background-color: cornflowerblue;
+    height: 75px;
+}
+
+.content {
+    background-color: rgba(255, 0, 0, 0.34);
+    height: 500px;
+    margin-top: -20px;
+    padding-top: 5%;
+}
+
+.entry {
+    background-color: cornflowerblue;
+    height: 420px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.data {
+    background-color: white;
+    height: 350px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#addIcon {
+    width: 10%;
+    margin-left: 45%;
+}
+
+.addWrapper {
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 1.5em;
+    width: 14.2em;
+    margin-top: -9em;
+    margin-left: -7.1em;
+}
+
+.instructionsAddWrapper {
+    margin-top: -5em;
+}
+
+.nfactsAddWrapper {
+    margin-top: -1em;
+}
+
+.tagsAddWrapper {
+    margin-top: 3em;
 }

@@ -44,3 +44,19 @@ var app = {
 };
 
 app.initialize();
+
+$(function() {
+    
+    var $button = $('#addIngredientButton');
+    var $textInput = $('input.ingredientInput:text');
+    
+    $button.on('click', function(event){
+        event.preventDefault();
+        var newText = $textInput.val();
+        $('ul.ulIngredients li:last').after(
+            '<li>' + 
+            '<h6>' + newText + '</h6>' + 
+            '</li>'
+        );
+    });
+});

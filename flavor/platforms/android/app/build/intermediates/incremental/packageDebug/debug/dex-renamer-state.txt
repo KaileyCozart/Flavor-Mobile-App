@@ -1,0 +1,4 @@
+#Wed Feb 21 21:21:47 PST 2018
+base.0=/Users/kaileycozart/Documents/GitHub/Flavor-Mobile-App/flavor/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0
+renamed.0=classes.dex
+file.0=/Users/kaileycozart/Documents/GitHub/Flavor-Mobile-App/flavor/platforms/android/app/build/intermediates/transforms/dexMerger/debug/0/classes.dex

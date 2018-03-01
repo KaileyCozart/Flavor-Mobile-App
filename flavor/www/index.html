@@ -19,31 +19,66 @@
 -->
 <html>
     <head>
-        <!--
-        Customize this policy to fit your own app's needs. For more guidance, see:
-            https://github.com/apache/cordova-plugin-whitelist/blob/master/README.md#content-security-policy
-        Some notes:
-            * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
-            * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
-            * Disables use of inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
-                * Enable inline JS: add 'unsafe-inline' to default-src
-        -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <!-- Meta Data -->
+        <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"-->
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!-- Stylesheets -->
         <link rel="stylesheet" type="text/css" href="css/index.css">
-        <title>Hello World</title>
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+        <!-- Title -->
+        <title>Flavor Mobile</title>
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Is So Bae</p>
-                <p class="event received">Is Cool</p>
+        <div class="myApp">
+            <div class="hero">
+                <h1> Flavor </h1>
+            </div>
+            <div class="content">
+                <img id="addIcon" src="img/add.png" />
+                <div id="entryItemOne" class="entry">
+                    <h3> Chicken Noodle Soup </h3>
+                    <div class="data">
+                        <h5> Ingredients </h5>
+                            <div class="ingredientAddWrapper addWrapper">
+                                <ul class="ulIngredients">
+                                    <li>
+                                        <h6> Chicken </h6>
+                                    </li>
+                                <ul>
+                                <input type="text" class="ingredientInput" placeholder="add ingredient" />
+                                <input type="submit" id="addIngredientButton" value="add" />
+                            </div>
+                        <!--h5> Instructions </h5>
+                            <form id="addInstructions">
+                                <div class="instructionsAddWrapper addWrapper">
+                                    <input type="text" placeholder="add instruction" />
+                                    <input type="submit" id="addInstructionsButton" value="add" />
+                                </div>
+                            </form>
+                        <h5> Nutritional Facts </h5>
+                            <form id="addNfacts">
+                                <div class="nfactsAddWrapper addWrapper">
+                                    <input type="text" placeholder="add nutritional fact" />
+                                    <input type="submit" id="addNfactsButton" value="add" />
+                                </div>
+                            </form>
+                        <h5> Tags </h5>
+                            <form id="addTags">
+                                <div class="tagsAddWrapper addWrapper">
+                                    <input type="text" placeholder="add tag" />
+                                    <input type="submit" id="addTagButton" value="add" />
+                                </div>
+                            </form-->
+                    </div>
+                </div>
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+        <!--script type="text/javascript" src="cordova.js"></script-->
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>

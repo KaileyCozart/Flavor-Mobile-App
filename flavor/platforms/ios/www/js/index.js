@@ -44,3 +44,13 @@ var app = {
 };
 
 app.initialize();
+
+$(function() {
+    
+    var $addElementButton = $('#addIcon');
+    
+    $addElementButton.on('click', function(event){
+        event.preventDefault();
+        
+    });
+});
