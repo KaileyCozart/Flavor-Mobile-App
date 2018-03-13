@@ -142,3 +142,41 @@ $(function () {
     });
 
 });
+
+// Add Ingredient to Search For
+$(function () {
+    
+        var $button = $('#addIngredientButtonSearch');
+        var $textInput = $('input.ingredientSearchInput:text');
+    
+        $button.on('click', function (event) {
+            event.preventDefault();
+            var newText = $textInput.val();
+            $('ul.ulSearchIngredient li:last').after(
+                '<li>' +
+                '<h6>' + newText + '</h6>' +
+                '</li>'
+            );
+            $textInput.val('');
+        });
+    
+});
+
+// Add Tag to Search For
+$(function () {
+    
+        var $button = $('#addTagButtonSearch');
+        var $textInput = $('input.tagSearchInput:text');
+    
+        $button.on('click', function (event) {
+            event.preventDefault();
+            var newText = $textInput.val();
+            $('ul.ulTagSearch li:last').after(
+                '<li>' +
+                '<h6>' + newText + '</h6>' +
+                '</li>'
+            );
+            $textInput.val('');
+        });
+    
+});
