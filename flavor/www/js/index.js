@@ -58,5 +58,61 @@ $(function() {
             '<h6>' + newText + '</h6>' + 
             '</li>'
         );
+        $textInput.val('');
     });
+
+});
+
+$(function() {
+
+    var $button = $('#addInstructionButton');
+    var $textInput = $('input.instructionInput:text');
+    
+    $button.on('click', function(event){
+        event.preventDefault();
+        var newText = $textInput.val();
+        $('ul.ulInstruction li:last').after(
+            '<li>' + 
+            '<h6>' + newText + '</h6>' + 
+            '</li>'
+        );
+        $textInput.val('');
+    });
+
+});
+
+$(function() {
+
+    var $button = $('#addNutritionalButton');
+    var $textInput = $('input.nutritionalInput:text');
+    
+    $button.on('click', function(event){
+        event.preventDefault();
+        var newText = $textInput.val();
+        $('ul.ulNutritional li:last').after(
+            '<li>' + 
+            '<h6>' + newText + '</h6>' + 
+            '</li>'
+        );
+        $textInput.val('');
+    });
+
+});
+
+$(function() {
+
+    var $button = $('#addTagButton');
+    var $textInput = $('input.tagInput:text');
+    
+    $button.on('click', function(event){
+        event.preventDefault();
+        var newText = $textInput.val();
+        $('ul.ulTags li:last').after(
+            '<li>' + 
+            '<h6>' + newText + '</h6>' + 
+            '</li>'
+        );
+        $textInput.val('');
+    });
+
 });

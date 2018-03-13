@@ -20,7 +20,7 @@
 <html>
     <head>
         <!-- Meta Data -->
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <!--meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"-->
         <meta name="format-detection" content="telephone=no">
         <meta name="msapplication-tap-highlight" content="no">
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
@@ -44,38 +44,56 @@
                     <h3> Chicken Noodle Soup </h3>
                     <div class="data">
                         <h5> Ingredients </h5>
-                            <form id="addIngredient">
-                                <div class="ingredientAddWrapper addWrapper">
-                                    <input type="text" placeholder="add ingredient" />
-                                    <input type="submit" id="addIngredientButton" value="add" />
-                                </div>
-                            </form>
+                            <div class="ingredientAddWrapper addWrapper">
+                                <ul class="ulIngredients">
+                                    <li>
+                                        <h6> Chicken </h6>
+                                    </li>
+                                <ul>
+                                <input type="text" class="input ingredientInput" placeholder="add ingredient" />
+                                <input type="submit" class="addButton" id="addIngredientButton" value="add" />
+                            </div>
+                    </div>
+                    <div class="data">
                         <h5> Instructions </h5>
-                            <form id="addInstructions">
-                                <div class="instructionsAddWrapper addWrapper">
-                                    <input type="text" placeholder="add instruction" />
-                                    <input type="submit" id="addInstructionsButton" value="add" />
-                                </div>
-                            </form>
+                        <div class="ingredientAddWrapper addWrapper">
+                            <ul class="ulInstruction">
+                                <li>
+                                    <h6> 1. Do this... </h6>
+                                </li>
+                            <ul>
+                            <input type="text" class="input instructionInput" placeholder="add ingredient" />
+                            <input type="submit" class="addButton" id="addInstructionButton" value="add" />
+                        </div>
+                    </div>
+                    <div class="data">
                         <h5> Nutritional Facts </h5>
-                            <form id="addNfacts">
-                                <div class="nfactsAddWrapper addWrapper">
-                                    <input type="text" placeholder="add nutritional fact" />
-                                    <input type="submit" id="addNfactsButton" value="add" />
-                                </div>
-                            </form>
+                        <div class="ingredientAddWrapper addWrapper">
+                            <ul class="ulNutritional">
+                                <li>
+                                    <h6> Calories: 150 </h6>
+                                </li>
+                            <ul>
+                            <input type="text" class="input nutritionalInput" placeholder="add ingredient" />
+                            <input type="submit" class="addButton" id="addNutritionalButton" value="add" />
+                        </div>
+                    </div>
+                    <div class="data">
                         <h5> Tags </h5>
-                            <form id="addTags">
-                                <div class="tagsAddWrapper addWrapper">
-                                    <input type="text" placeholder="add tag" />
-                                    <input type="submit" id="addTagButton" value="add" />
-                                </div>
-                            </form>
+                        <div class="ingredientAddWrapper addWrapper">
+                            <ul class="ulTags">
+                                <li>
+                                    <h6> Dessert </h6>
+                                </li>
+                            <ul>
+                            <input type="text" class="input tagInput" placeholder="add ingredient" />
+                            <input type="submit" class="addButton" id="addTagButton" value="add" />
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+        <!--script type="text/javascript" src="cordova.js"></script-->
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
