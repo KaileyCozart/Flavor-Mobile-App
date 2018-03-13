@@ -18,7 +18,7 @@
  */
 var app = {
     // Application Constructor
-    initialize: function() {
+    initialize: function () {
         document.addEventListener('deviceready', this.onDeviceReady.bind(this), false);
     },
 
@@ -26,12 +26,12 @@ var app = {
     //
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
-    onDeviceReady: function() {
+    onDeviceReady: function () {
         this.receivedEvent('deviceready');
     },
 
     // Update DOM on a Received Event
-    receivedEvent: function(id) {
+    receivedEvent: function (id) {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
@@ -45,17 +45,38 @@ var app = {
 
 app.initialize();
 
-$(function() {
-    
+// Add Recipe Name
+$(function () {
+
+    var $button = $('#addNameButton');
+    var $textInput = $('input.nameInput:text');
+
+    $button.on('click', function (event) {
+        event.preventDefault();
+        var newText = $textInput.val();
+        $('ul.ulName li:last').after(
+            '<li>' +
+            '<h3 class="noPaddingTop">' + newText + '</h3>' +
+            '</li>'
+        );
+        $button.remove();
+        $textInput.remove();
+    });
+
+});
+
+// Add Recipe Ingredients
+$(function () {
+
     var $button = $('#addIngredientButton');
     var $textInput = $('input.ingredientInput:text');
-    
-    $button.on('click', function(event){
+
+    $button.on('click', function (event) {
         event.preventDefault();
         var newText = $textInput.val();
         $('ul.ulIngredients li:last').after(
-            '<li>' + 
-            '<h6>' + newText + '</h6>' + 
+            '<li>' +
+            '<h6>' + newText + '</h6>' +
             '</li>'
         );
         $textInput.val('');
@@ -63,17 +84,18 @@ $(function() {
 
 });
 
-$(function() {
+// Add Recipe Instructions
+$(function () {
 
     var $button = $('#addInstructionButton');
     var $textInput = $('input.instructionInput:text');
-    
-    $button.on('click', function(event){
+
+    $button.on('click', function (event) {
         event.preventDefault();
         var newText = $textInput.val();
         $('ul.ulInstruction li:last').after(
-            '<li>' + 
-            '<h6>' + newText + '</h6>' + 
+            '<li>' +
+            '<h6>' + newText + '</h6>' +
             '</li>'
         );
         $textInput.val('');
@@ -81,35 +103,39 @@ $(function() {
 
 });
 
-$(function() {
+// Add Recipe Nutrition Facts
+/*
+$(function () {
 
     var $button = $('#addNutritionalButton');
     var $textInput = $('input.nutritionalInput:text');
-    
-    $button.on('click', function(event){
+
+    $button.on('click', function (event) {
         event.preventDefault();
         var newText = $textInput.val();
         $('ul.ulNutritional li:last').after(
-            '<li>' + 
-            '<h6>' + newText + '</h6>' + 
+            '<li>' +
+            '<h6>' + newText + '</h6>' +
             '</li>'
         );
         $textInput.val('');
     });
 
 });
+*/
 
-$(function() {
+// Add Recipe Tags
+$(function () {
 
     var $button = $('#addTagButton');
     var $textInput = $('input.tagInput:text');
-    
-    $button.on('click', function(event){
+
+    $button.on('click', function (event) {
         event.preventDefault();
         var newText = $textInput.val();
         $('ul.ulTags li:last').after(
-            '<li>' + 
-            '<h6>' + newText + '</h6>' + 
+            '<li>' +
+            '<h6>' + newText + '</h6>' +
             '</li>'
         );
         $textInput.val('');

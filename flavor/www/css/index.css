@@ -172,9 +172,20 @@ div.data h5 {
     margin-bottom: 0px;
 }
 
-#addIcon {
-    width: 10%;
-    margin-left: 45%;
+.iconOuterWrapper {
+    position: relative;
+    height: 60px;
+}
+
+.iconInnerWrapper {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#icon {
+    width: 50px;
 }
 
 .addWrapper {
@@ -195,4 +206,26 @@ div.data h5 {
 
 .noPaddingTop {
     padding-top: 0px;
+}
+
+.addPageAddIcon {
+    margin-top: 25px;
+    width: 50px;
+    margin-left: calc(50% - 25px);
+}
+
+.buttonDiv {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.buttonDivWrapper {
+    position: relative;
+    height: 15px;
+}
+
+.addPaddingRight {
+    margin-left: 20px;
 }

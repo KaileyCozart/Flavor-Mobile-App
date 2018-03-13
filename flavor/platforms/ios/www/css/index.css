@@ -152,6 +152,10 @@ ul {
     padding-bottom: 25px;
 }
 
+.addEntry {
+    padding-top: 25px;
+}
+
 .data {
     background-color: white;
     color: black;
@@ -189,14 +193,22 @@ div.data h5 {
     margin-top: 10px;
 }
 
-.instructionsAddWrapper {
-    margin-top: -5em;
+.noPaddingTop {
+    padding-top: 0px;
 }
 
-.nfactsAddWrapper {
-    margin-top: -1em;
+.addPageAddIcon {
+    margin-top: 25px;
 }
 
-.tagsAddWrapper {
-    margin-top: 3em;
+.buttonDiv {
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.buttonDivWrapper {
+    position: relative;
+    height: 15px;
 }
