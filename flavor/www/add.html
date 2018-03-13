@@ -36,10 +36,9 @@
     <body>
         <div class="myApp">
             <div class="hero">
-                <h1> Flavor </h1>
+                <h1> Add Page </h1>
             </div>
             <div class="content">
-                <a href="add.html"><img id="addIcon" src="img/add.png" /></a>
                 <div id="entryItemOne" class="entry">
                     <h3> Chicken Noodle Soup </h3>
                     <div class="data">
@@ -50,6 +49,8 @@
                                         <h6> Chicken </h6>
                                     </li>
                                 <ul>
+                                <input type="text" class="input ingredientInput" placeholder="add ingredient" />
+                                <input type="submit" class="addButton" id="addIngredientButton" value="add" />
                             </div>
                     </div>
                     <div class="data">
@@ -60,6 +61,8 @@
                                     <h6> 1. Do this... </h6>
                                 </li>
                             <ul>
+                            <input type="text" class="input instructionInput" placeholder="add ingredient" />
+                            <input type="submit" class="addButton" id="addInstructionButton" value="add" />
                         </div>
                     </div>
                     <div class="data">
@@ -70,6 +73,8 @@
                                     <h6> Calories: 150 </h6>
                                 </li>
                             <ul>
+                            <input type="text" class="input nutritionalInput" placeholder="add ingredient" />
+                            <input type="submit" class="addButton" id="addNutritionalButton" value="add" />
                         </div>
                     </div>
                     <div class="data">
@@ -80,12 +85,13 @@
                                     <h6> Dessert </h6>
                                 </li>
                             <ul>
+                            <input type="text" class="input tagInput" placeholder="add ingredient" />
+                            <input type="submit" class="addButton" id="addTagButton" value="add" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--script type="text/javascript" src="cordova.js"></script-->
         <script type="text/javascript" src="js/index.js"></script>
     </body>
 </html>
