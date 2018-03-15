@@ -109,6 +109,11 @@ $(function () {
             '</li>'
         );
         $textInput.val('');
+
+        // Remove Ingredient on Click
+        $('li').on('click', function(){
+            $(this).remove();
+        });
     });
 
 });
@@ -128,6 +133,11 @@ $(function () {
             '</li>'
         );
         $textInput.val('');
+
+        // Remove Instruction on Click
+        $('li').on('click', function(){
+            $(this).remove();
+        });
     });
 
 });
@@ -168,6 +178,11 @@ $(function () {
             '</li>'
         );
         $textInput.val('');
+
+        // Remove Instruction on Click
+        $('li').on('click', function(){
+            $(this).remove();
+        });
     });
 
 });
