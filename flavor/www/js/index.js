@@ -45,6 +45,19 @@ var app = {
 
 app.initialize();
 
+// Popup When Recipe to be Deleted
+$(function () {
+
+    var $deleteButton = $('#deleteButton');
+    var $deletePopup = $('#deletePopup');
+    $deletePopup.hide();
+    $deleteButton.on('click', function(event) {
+        event.preventDefault();
+        $deletePopup.show();
+    });
+
+});
+
 // Hide Edit Button on Load
 $(function () {
 
