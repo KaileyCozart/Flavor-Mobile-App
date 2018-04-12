@@ -52,23 +52,14 @@
                             die("Connection failed: " .mysqli_connect_error());
                         }
 
-                        $query = mysqli_query($connection,"SELECT recipe_name FROM recipe_test");
+                        $query = mysqli_query($connection,"SELECT * FROM recipes");
                         while ($row = mysqli_fetch_array($query)) {
-echo <<<TOP
+echo <<<SEC1
                             <div id="entryItemOne" class="entry">
-TOP;
+SEC1;
                             echo "<h3>" . $row["recipe_name"] . "</h3>";
                             
-echo <<<DIV
-                            <!--div id="deletePopup">
-                                <h3> Are you sure you want to delete this recipe? </h3>
-                                <div class="buttonDivWrapper">
-                                    <div class="buttonDiv">
-                                        <a href="index.html"><button> Yes </button></a>
-                                        <a href="index.html"><button> No </button></a>
-                                    </div>
-                                </div>
-                            </div-->
+echo <<<SEC2
                         <div class="buttonDivWrapper">
                             <div class="buttonDiv">
                                 <a href="add.html"><button> Edit </button></a>
@@ -80,8 +71,9 @@ echo <<<DIV
                                 <div class="ingredientAddWrapper addWrapper">
                                     <ul class="ulIngredients">
                                         <li>
-                                            <h6> Chicken </h6>
-                                            <h6> Wings </h6>
+SEC2;
+                                    echo "<h6>" . $row["recipe_ingredients"] . "</h6>";
+echo <<<SEC3
                                         </li>
                                     <ul>
                                 </div>
@@ -91,7 +83,9 @@ echo <<<DIV
                             <div class="ingredientAddWrapper addWrapper">
                                 <ul class="ulInstruction">
                                     <li>
-                                        <h6> 1. Do this... </h6>
+SEC3;
+                                    echo "<h6>" . $row["recipe_instruct"] . "</h6>";
+echo <<<SEC4
                                     </li>
                                 <ul>
                             </div>
@@ -101,13 +95,13 @@ echo <<<DIV
                             <div class="ingredientAddWrapper addWrapper">
                                 <ul class="ulTags">
                                     <li>
-                                        <h6> Dessert </h6>
+                                        <h6> Food </h6>
                                     </li>
                                 <ul>
                             </div>
                         </div>
                     </div>
-DIV;
+SEC4;
                         }
                         
                         mysqli_close($connection);
