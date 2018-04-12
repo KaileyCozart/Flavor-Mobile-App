@@ -45,11 +45,33 @@ var app = {
 
 app.initialize();
 
+// Popup When Recipe to be Deleted
+$(function () {
+
+    var $deleteButton = $('#deleteButton');
+    var $deletePopup = $('#deletePopup');
+    $deletePopup.hide();
+    $deleteButton.on('click', function(event) {
+        event.preventDefault();
+        $deletePopup.show();
+    });
+
+});
+
+// Hide Edit Button on Load
+$(function () {
+
+    var $editButton = $('#editNameButton');
+    $editButton.hide();
+
+});
+
 // Add Recipe Name
 $(function () {
 
     var $button = $('#addNameButton');
     var $textInput = $('input.nameInput:text');
+    var $editButton = $('#editNameButton');
 
     $button.on('click', function (event) {
         event.preventDefault();
@@ -59,8 +81,28 @@ $(function () {
             '<h3 class="noPaddingTop">' + newText + '</h3>' +
             '</li>'
         );
-        $button.remove();
-        $textInput.remove();
+        $button.hide();
+        $textInput.hide();
+        $editButton.show();
+    });
+
+});
+
+// Edit Recipe Name on Edit Button Click
+
+$(function () {
+
+    var $button = $('#addNameButton');
+    var $textInput = $('input.nameInput:text');
+    var $editButton = $('#editNameButton');
+
+    $editButton.on('click', function(event) {
+        event.preventDefault();
+        $button.show();
+        $textInput.val('');
+        $textInput.show();
+        $editButton.hide();
+        $('ul.ulName li:last').remove();
     });
 
 });
@@ -80,6 +122,11 @@ $(function () {
             '</li>'
         );
         $textInput.val('');
+
+        // Remove Ingredient on Click
+        $('li').on('click', function(){
+            $(this).remove();
+        });
     });
 
 });
@@ -99,6 +146,11 @@ $(function () {
             '</li>'
         );
         $textInput.val('');
+
+        // Remove Instruction on Click
+        $('li').on('click', function(){
+            $(this).remove();
+        });
     });
 
 });
@@ -139,6 +191,11 @@ $(function () {
             '</li>'
         );
         $textInput.val('');
+
+        // Remove Instruction on Click
+        $('li').on('click', function(){
+            $(this).remove();
+        });
     });
 
 });

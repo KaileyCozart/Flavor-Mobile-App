@@ -46,7 +46,20 @@
                     </div>
                 </div>
                 <div id="entryItemOne" class="entry">
-                    <h3> Chicken Noodle Soup </h3>
+                    <?php
+                        $connection = mysqli_connect('flavordb2.cohujudgkpgx.us-west-2.rds.amazonaws.com', 'kcozart21', 'my3e-mail', 'new_schema');
+                        
+                        if(!$connection) {
+                            die("Connection failed: " .mysqli_connect_error());
+                        }
+
+                        $query = mysqli_query($connection,"SELECT recipe_name FROM recipe_test");
+                        while ($row = mysqli_fetch_array($query)) {
+                            echo "<h3>" . $row["recipe_name"] . "</h3>";
+                        }
+                        
+                        mysqli_close($connection);
+                    ?>
                     <div id="deletePopup">
                         <h3> Are you sure you want to delete this recipe? </h3>
                         <div class="buttonDivWrapper">
@@ -82,16 +95,6 @@
                             <ul>
                         </div>
                     </div>
-                    <!--div class="data">
-                        <h5> Nutritional Facts </h5>
-                        <div class="ingredientAddWrapper addWrapper">
-                            <ul class="ulNutritional">
-                                <li>
-                                    <h6> Calories: 150 </h6>
-                                </li>
-                            <ul>
-                        </div>
-                    </div-->
                     <div class="data">
                         <h5> Tags </h5>
                         <div class="ingredientAddWrapper addWrapper">

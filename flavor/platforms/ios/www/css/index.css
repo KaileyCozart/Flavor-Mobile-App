@@ -229,3 +229,18 @@ div.data h5 {
 .addPaddingRight {
     margin-left: 20px;
 }
+
+#deletePopup {
+    background-color: white;
+    color: black;
+    border: 1px dotted black;
+    border-radius: 5px;
+    padding-bottom: 62px;
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    height: 5em;
+    width: 20em;
+    margin-top: -2.5em;
+    margin-left: -10em;
+}
