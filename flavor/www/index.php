@@ -41,8 +41,8 @@
             <div class="content">
                 <div class="iconOuterWrapper">
                     <div class="iconInnerWrapper">
-                        <a href="add.html"><img id="icon" src="img/add.png" /></a>
-                        <a href="search.html"><img id="icon" class="addPaddingRight" src="img/search.png" /></a>
+                        <a href="add.php"><img id="icon" src="img/add.png" /></a>
+                        <a href="search.php"><img id="icon" class="addPaddingRight" src="img/search.png" /></a>
                     </div>
                 </div>
                     <?php
