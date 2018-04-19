@@ -95,13 +95,15 @@ echo <<<SEC4
                             <div class="ingredientAddWrapper addWrapper">
                                 <ul class="ulTags">
                                     <li>
-                                        <h6> Food </h6>
+SEC4;
+                                        echo "<h6>" . $row["recipe_tags"] . "</h6>";
+echo <<<SEC5
                                     </li>
                                 <ul>
                             </div>
                         </div>
                     </div>
-SEC4;
+SEC5;
                         }
                         
                         mysqli_close($connection);
