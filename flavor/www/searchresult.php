@@ -10,13 +10,11 @@
 
                 $query = mysqli_query($connection,"SELECT * FROM recipes");
                 while ($row = mysqli_fetch_array($query)) {
-                    if (strpos($row["recipe_name"], $q) !== false) {
-                        echo "<h3>" . $row["recipe_name"] . "</h3>";
+                    if (strstr($row["recipe_name"], $q) !== false) {
                         echo <<<SEC1
-                        <div id="entryItemOne" class="entry"
+                        <div id="entryItemOne" class="entry">
 SEC1;
-                        echo "<h3>" . $row["recipe_name"] . "</h3>";
-                        
+                    echo "<h3>" . $row["recipe_name"] . "</h3>";
         echo <<<SEC2
                     <div class="buttonDivWrapper">
                         <div class="buttonDiv">
