@@ -7,9 +7,12 @@
                 }
     
                 $q = $_GET["q"];
-                $sql = "hello";
-    
-                if (strpos($sql, $q) !== false) {
-                    echo "<h3>" . $sql . "</h3>";
+                // $sql = "hello";
+
+                $query = mysqli_query($connection,"SELECT * FROM recipes");
+                while ($row = mysqli_fetch_array($query)) {
+                    if (strpos($row["recipe_name"], $q) !== false) {
+                        echo "<h3>" . $row["recipe_name"] . "</h3>";
+                    }
                 }
 ?>
