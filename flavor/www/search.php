@@ -154,9 +154,9 @@
         <script>
             function search(str) {
                 if (str.length==0) { 
-                    document.getElementById("searchResult").innerHTML="Nothing Entered";
+                    document.getElementById("searchResult").innerHTML="";
                     return;
-                }
+                } 
                 if (window.XMLHttpRequest) {
                     // code for IE7+, Firefox, Chrome, Opera, Safari
                     xmlhttp=new XMLHttpRequest();
@@ -202,13 +202,6 @@
 
             if(!$connection) {
                 die("Connection failed: " .mysqli_connect_error());
-            }
-
-            $q = $_GET["q"];
-            $sql = "hello";
-
-            if (strpos($sql, $q) !== false) {
-                echo "<h3>" . $sql . "</h3>";
             }
 
             $query = mysqli_query($connection,"SELECT * FROM recipes");
