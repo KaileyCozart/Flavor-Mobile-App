@@ -7,12 +7,60 @@
                 }
     
                 $q = $_GET["q"];
-                // $sql = "hello";
 
                 $query = mysqli_query($connection,"SELECT * FROM recipes");
                 while ($row = mysqli_fetch_array($query)) {
                     if (strpos($row["recipe_name"], $q) !== false) {
                         echo "<h3>" . $row["recipe_name"] . "</h3>";
+                        echo <<<SEC1
+                        <div id="entryItemOne" class="entry"
+SEC1;
+                        echo "<h3>" . $row["recipe_name"] . "</h3>";
+                        
+        echo <<<SEC2
+                    <div class="buttonDivWrapper">
+                        <div class="buttonDiv">
+                            <a href="add.html"><button> Edit </button></a>
+                            <button id="deleteButton"> Delete </button>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <h5> Ingredients </h5>
+                            <div class="ingredientAddWrapper addWrapper">
+                                <ul class="ulIngredients">
+                                    <li>
+SEC2;
+                                echo "<h6>" . $row["recipe_ingredients"] . "</h6>";
+        echo <<<SEC3
+                                    </li>
+                                <ul>
+                            </div>
+                    </div>
+                    <div class="data">
+                        <h5> Instructions </h5>
+                        <div class="ingredientAddWrapper addWrapper">
+                            <ul class="ulInstruction">
+                                <li>
+SEC3;
+                                echo "<h6>" . $row["recipe_instruct"] . "</h6>";
+        echo <<<SEC4
+                                </li>
+                            <ul>
+                        </div>
+                    </div>
+                    <div class="data">
+                        <h5> Tags </h5>
+                        <div class="ingredientAddWrapper addWrapper">
+                            <ul class="ulTags">
+                                <li>
+                                    <h6> Food </h6>
+                                </li>
+                            <ul>
+                        </div>
+                    </div>
+                </div>
+SEC4;
                     }
                 }
+                    mysqli_close($connection);
 ?>
