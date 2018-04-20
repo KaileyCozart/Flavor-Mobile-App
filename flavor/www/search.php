@@ -44,12 +44,10 @@
                             <div class="ingredientAddWrapper addWrapper">
                                 <ul class="ulIngredients">
                                     <li>
-                                        
                                     </li>
                                 <ul>
                                 <form action="<?php search.php ?>" method="GET">
                                     <input onkeyup="search(this.value)" type="text" class="input ingredientInput" placeholder="Enter Recipe Name" name="name_search"/>
-                                    <a href='search.php?search=true'><input type="submit" class="addButton" id="" value="Go" /></a>
                                 </form>
                             </div>
                     </div>

@@ -78,7 +78,7 @@ $(function () {
         var newText = $textInput.val();
         $('ul.ulName li:last').after(
             '<li>' +
-            '<h3 class="noPaddingTop">' + newText + '</h3>' +
+            '<h3 id="one" class="noPaddingTop">' + newText + '</h3>' +
             '</li>'
         );
         $button.hide();
@@ -118,7 +118,7 @@ $(function () {
         var newText = $textInput.val();
         $('ul.ulIngredients li:last').after(
             '<li>' +
-            '<h6>' + newText + '</h6>' +
+            '<h6 class="two">' + newText + '<br />' + '</h6>' +
             '</li>'
         );
         $textInput.val('');
@@ -142,7 +142,7 @@ $(function () {
         var newText = $textInput.val();
         $('ul.ulInstruction li:last').after(
             '<li>' +
-            '<h6>' + newText + '</h6>' +
+            '<h6 class="three">' + newText + '<br />' + '</h6>' +
             '</li>'
         );
         $textInput.val('');
@@ -187,7 +187,7 @@ $(function () {
         var newText = $textInput.val();
         $('ul.ulTags li:last').after(
             '<li>' +
-            '<h6>' + newText + '</h6>' +
+            '<h6 class="four">' + newText + '<br />' + '</h6>' +
             '</li>'
         );
         $textInput.val('');
