@@ -7,7 +7,7 @@ if($_REQUEST['name']){
 	$instructions= $_REQUEST['instructions'];
 	$tags = $_REQUEST['tags'];
 
-    $q = "INSERT INTO recipes VALUES (21,'$name', '$ingredients', '$instructions', '$tags')";
+    $q = "INSERT INTO recipes VALUES ('','$name', '$ingredients', '$instructions', '$tags')";
     $query = mysqli_query($connection,$q);
     echo "Data Inserted";
 }
