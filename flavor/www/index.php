@@ -17,10 +17,8 @@
     </head>
     <body>
         <div class="myApp">
-            <div class="hero">
-                <h1> Landing Page </h1>
-            </div>
             <div class="content">
+                <h1> Landing Page </h1>
                 <div class="iconOuterWrapper">
                     <div class="iconInnerWrapper">
                         <a href="add.php"><img id="icon" src="img/add.png" /></a>
@@ -43,8 +41,8 @@ SEC1;
 echo <<<SEC2
                         <div class="buttonDivWrapper">
                             <div class="buttonDiv">
-                                <a href="add.html"><button> Edit </button></a>
-                                <button id="deleteButton"> Delete </button>
+                                <!--a href="add.html"><button> Edit </button></a>
+                                <button id="deleteButton"> Delete </button-->
                             </div>
                         </div>
                         <div class="data">
