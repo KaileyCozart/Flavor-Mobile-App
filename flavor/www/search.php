@@ -32,9 +32,11 @@
     <body>
     <div class="myApp">
             <div class="content">
-                <h1> Search Page </h1>
-                <a id="submit" type="submit" href="index.php"><img id="addIcon" class="addPageAddIcon" src="img/add3.png" /></a>
+            <div id="entryItemZero" class="entry addEntry titleItem">
+                <img class="newFlavor" src="img/SearchFont.png" />
+            </div>
                 <div id="entryItemOne" class="entry addEntry">
+                    <a href="index.php"><button class="goBack">Go Back</button></a>
                     <div class="data">
                         <h5> Search By Recipe Name </h5>
                             <div class="ingredientAddWrapper addWrapper">

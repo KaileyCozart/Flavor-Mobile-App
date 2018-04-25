@@ -104,6 +104,10 @@ div.data h5 {
     width: 50px;
 }
 
+#entryItemZero {
+    margin-bottom: 25px;
+}
+
 .addWrapper {
     display: inline-block;
     width: 100%;
@@ -159,4 +163,21 @@ div.data h5 {
     width: 20em;
     margin-top: -2.5em;
     margin-left: -10em;
+}
+
+.goBack {
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 15px;
+    border: 1px solid brown;
+    background-color: rgba(61, 44, 26, .7);
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 40px;
+    font-size: 15px;
+}
+
+.goBack:focus {
+    outline: 0px;
 }

@@ -69,7 +69,9 @@
     <body>
         <div class="myApp">
             <div class="content">
-            <h1> Add Page </h1>
+            <div id="entryItemZero" class="entry addEntry titleItem">
+                <img class="newFlavor" src="img/AddRecipe.png" />
+            </div>
                 <div id="entryItemOne" class="entry addEntry">
                     <div class="data">
                         <h5> Recipe Name </h5>
