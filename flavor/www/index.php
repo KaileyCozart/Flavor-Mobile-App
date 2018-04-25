@@ -18,13 +18,15 @@
     <body>
         <div class="myApp">
             <div class="content">
-                <h1> Landing Page </h1>
+            <div id="entryItemOne" class="entry">
+                <img class="newFlavor" src="img/NewFlavor.png" />
                 <div class="iconOuterWrapper">
                     <div class="iconInnerWrapper">
-                        <a href="add.php"><img id="icon" src="img/add.png" /></a>
+                        <a href="add.php"><img id="icon" src="img/add3.png" /></a>
                         <a href="search.php"><img id="icon" class="addPaddingRight" src="img/search.png" /></a>
                     </div>
                 </div>
+            </div>
                     <?php
                         $connection = mysqli_connect('flavordb2.cohujudgkpgx.us-west-2.rds.amazonaws.com', 'kcozart21', 'my3e-mail', 'new_schema');
                         

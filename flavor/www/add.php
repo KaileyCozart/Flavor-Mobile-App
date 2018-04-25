@@ -72,6 +72,7 @@
             <h1> Add Page </h1>
                 <div id="entryItemOne" class="entry addEntry">
                     <div class="data">
+                        <h5> Recipe Name </h5>
                             <div class="ingredientAddWrapper addWrapper">
                                 <ul class="ulName">
                                     <li>
@@ -91,7 +92,7 @@
                                         
                                     </li>
                                 <ul>
-                                <input id="ingredients" type="text" class="input ingredientInput" placeholder="Enter Ingredient" />
+                                <textarea id="ingredients" type="text" class="input ingredientInput" placeholder="Enter Ingredients"></textarea>
                                 <!--input type="submit" class="addButton" id="addIngredientButton" value="Add" /-->
                             </div>
                     </div>
@@ -103,7 +104,7 @@
                                     
                                 </li>
                             <ul>
-                            <input id="instructions" type="text" class="input instructionInput" placeholder="Enter Instruction" />
+                            <textarea id="instructions" type="text" class="input instructionInput" placeholder="Enter Instructions"></textarea>
                             <!--input type="submit" class="addButton" id="addInstructionButton" value="Add" /-->
                         </div>
                     </div>
@@ -115,12 +116,12 @@
                                     
                                 </li>
                             <ul>
-                            <input id="tags" type="text" class="input tagInput" placeholder="Enter Tag" />
+                            <textarea id="tags" type="text" class="input tagInput" placeholder="Enter Tags"></textarea>
                             <!--input type="submit" class="addButton" id="addTagButton" value="Add" /-->
                         </div>
                     </div>
                     <!-- onclick="send to sql" -->
-                    <a id="submit" type="submit" href="index.php"><img id="addIcon" class="addPageAddIcon" src="img/add.png" /></a>
+                    <a id="submit" type="submit" href="index.php"><img id="addIcon" class="addPageAddIcon" src="img/add3.png" /></a>
                 </div>
             </div>
         </div>
