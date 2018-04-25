@@ -68,10 +68,8 @@
     </head>
     <body>
         <div class="myApp">
-            <div class="hero">
-                <h1> Add Page </h1>
-            </div>
             <div class="content">
+            <h1> Add Page </h1>
                 <div id="entryItemOne" class="entry addEntry">
                     <div class="data">
                             <div class="ingredientAddWrapper addWrapper">

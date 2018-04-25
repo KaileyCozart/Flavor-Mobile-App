@@ -16,10 +16,10 @@ SEC1;
                     echo "<h3>" . $row["recipe_name"] . "</h3>";
         echo <<<SEC2
                     <div class="buttonDivWrapper">
-                        <div class="buttonDiv">
+                        <!--div class="buttonDiv">
                             <a href="add.html"><button> Edit </button></a>
                             <button id="deleteButton"> Delete </button>
-                        </div>
+                        </div-->
                     </div>
                     <div class="data">
                         <h5> Ingredients </h5>

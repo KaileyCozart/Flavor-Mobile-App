@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="format-detection" content="telephone=no">
-        <meta name="msapplication-tap-highlight" content="no">
-        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
         <link rel="stylesheet" type="text/css" href="css/index.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -34,10 +31,8 @@
     </head>
     <body>
     <div class="myApp">
-            <div class="hero">
-                <h1> Search Page </h1>
-            </div>
             <div class="content">
+                <h1> Search Page </h1>
                 <div id="entryItemOne" class="entry addEntry">
                     <div class="data">
                         <h5> Search By Recipe Name </h5>
@@ -54,6 +49,6 @@
                 </div>
                 <div id="searchResult"></div>
             </div>
-        <script type="text/javascript" src="js/index.js"></script>
+        <!--script type="text/javascript" src="js/index.js"></script-->
     </body>
 </html>
