@@ -9,7 +9,7 @@
 
                 $query = mysqli_query($connection,"SELECT * FROM recipes");
                 while ($row = mysqli_fetch_array($query)) {
-                    if (stristr($row["recipe_name"], $q) !== false) {
+                    if (stristr($row["recipe_tags"], $q) !== false) {
                         echo <<<SEC1
                         <div id="entryItemOne" class="entry searchEntry">
 SEC1;

@@ -82,6 +82,7 @@ img.newFlavor {
 
 li h6{
     padding-top: 0px;
+    margin-top: 5px;
 }
 
 div.data h5 {
@@ -104,7 +105,7 @@ div.data h5 {
     width: 50px;
 }
 
-#entryItemZero {
+#entryItemZero, #entryItemOne, #entryItemTwo, #entryItemThree, #entryItemFour {
     margin-bottom: 25px;
 }
 
@@ -180,4 +181,8 @@ div.data h5 {
 
 .goBack:focus {
     outline: 0px;
+}
+
+.searchEntry {
+    background-color: rgba(136, 73, 34, 0.7);
 }
