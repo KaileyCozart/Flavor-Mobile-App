@@ -100,7 +100,7 @@
                                     </li>
                                 <ul>
                                 <form action="<?php search.php ?>" method="GET">
-                                    <input onkeyup="search2(this.value)" type="text" class="input ingredientInput" placeholder="Enter Recipe Name" name="name_search"/>
+                                    <input onkeyup="search2(this.value)" type="text" class="input ingredientInput" placeholder="Enter Ingredient Name" name="name_search"/>
                                 </form>
                             </div>
                     </div>
@@ -115,7 +115,7 @@
                                     </li>
                                 <ul>
                                 <form action="<?php search.php ?>" method="GET">
-                                    <input onkeyup="search3(this.value)" type="text" class="input ingredientInput" placeholder="Enter Recipe Name" name="name_search"/>
+                                    <input onkeyup="search3(this.value)" type="text" class="input ingredientInput" placeholder="Enter Tag Name" name="name_search"/>
                                 </form>
                             </div>
                     </div>

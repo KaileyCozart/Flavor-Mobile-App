@@ -87,7 +87,7 @@
                             </div>
                     </div>
                     <div class="data">
-                        <h5> Ingredients </h5>
+                        <h5> Instructions </h5>
                             <div class="ingredientAddWrapper addWrapper">
                                 <ul class="ulIngredients">
                                     <li>
@@ -99,7 +99,7 @@
                             </div>
                     </div>
                     <div class="data">
-                        <h5> Instructions </h5>
+                        <h5> Ingredients </h5>
                         <div class="ingredientAddWrapper addWrapper">
                             <ul class="ulInstruction">
                                 <li>
