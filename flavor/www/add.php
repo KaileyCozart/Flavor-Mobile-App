@@ -94,7 +94,7 @@
                                         
                                     </li>
                                 <ul>
-                                <textarea id="ingredients" type="text" class="input ingredientInput" placeholder="Enter Ingredients"></textarea>
+                                <textarea id="ingredients" type="text" class="input ingredientInput" placeholder="Enter Instructions"></textarea>
                                 <!--input type="submit" class="addButton" id="addIngredientButton" value="Add" /-->
                             </div>
                     </div>
@@ -106,7 +106,7 @@
                                     
                                 </li>
                             <ul>
-                            <textarea id="instructions" type="text" class="input instructionInput" placeholder="Enter Instructions"></textarea>
+                            <textarea id="instructions" type="text" class="input instructionInput" placeholder="Enter Ingredients"></textarea>
                             <!--input type="submit" class="addButton" id="addInstructionButton" value="Add" /-->
                         </div>
                     </div>
